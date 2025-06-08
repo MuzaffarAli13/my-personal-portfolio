@@ -34,8 +34,8 @@ export default function Hero() {
                 <Send className="mr-2 h-4 w-4" /> Hire Me
               </Button>
               <Link href="/Muzaffar_Ali_Resume.pdf" target="_blank">
-                 <Button variant="outline" className="border-violet-200 dark:border-violet-800">
-                <Download className="mr-2 h-4 w-4" /> Download Resume
+                 <Button variant="outline" className="border-violet-200 w-full dark:border-violet-800">
+                <Download className=" mr-2 h-4 w-4" /> Download Resume
               </Button>
               </Link>
             </div>
