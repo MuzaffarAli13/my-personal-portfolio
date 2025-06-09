@@ -15,6 +15,7 @@ const projects = [
     description: "A modern, responsive website for a high-end restaurant with online reservation system.",
     image: "/Shot 1.svg",
     techStack: ["Next.js", "Tailwind CSS", "Sanity", "Clerk", "Stripe"],
+    Link: "https://delicious-bites-e-commerce-web.vercel.app/"
   },
   {
     title: "E-commerce Store",
