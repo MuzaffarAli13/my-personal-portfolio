@@ -9,7 +9,7 @@ import { Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Ali Raza",
+    name: "Asad Ali",
     avatar: "AR",
     role: "Restaurant Owner",
     content: "Muzaffar delivered my website exactly as I imagined. Fast, reliable, and creative!",
