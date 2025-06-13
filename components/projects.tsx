@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
+import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
@@ -15,27 +16,32 @@ const projects = [
     description: "A modern, responsive website for a high-end restaurant with online reservation system.",
     image: "/resto.jpg",
     techStack: ["Next.js", "Tailwind CSS", "Sanity", "Clerk", "Stripe"],
-    Link: "https://delicious-bites-e-commerce-web.vercel.app/"
+    view_link: "https://delicious-bites-e-commerce-web.vercel.app/",
+    repo_link: "https://github.com/MuzaffarAli13/Delicious-Bites-e-commerce-web"
+
   },
   {
     title: "E-commerce Store",
     description: "Full-stack clothing brand e-commerce platform with authentication and payment integration.",
     image: "/Cover.svg",
     techStack: ["Next.js", "Tailwind CSS", "Sanity", "Clerk", "Stripe","Redux"],
-    Link: "https://hackathon-cyan-one.vercel.app/",
+    view_link: "https://hackathon-cyan-one.vercel.app/",
+    repo_link: "https://github.com/MuzaffarAli13/Shop.co"
   },
   {
     title: "Chatbot with AI Agents",
     description: "Custom chatbot using AI SDKs and agentic workflows for intelligent customer support.",
     image: "/Frame.svg",
     techStack: ["Python", "AI Agent SDK", "OpenAI", "Gemini"],
+    repo_link: "https://github.com/MuzaffarAli13/Multi-Agent-"
   },
   {
     title: "Modern Blog Website",
     description: "Responsive, SEO-friendly blog built with Next.js and Tailwind CSS.",
     image: "/blog.svg",
     techStack: ["React", "Next.js", "Tailwind CSS", "Sanity", "Clerk"],
-    Link: "https://blog-website-three-murex.vercel.app/",
+    view_link: "https://blog-website-three-murex.vercel.app/",
+    repo_link: "https://github.com/MuzaffarAli13/blog-website/tree/main"
   },
 ]
 
@@ -97,14 +103,22 @@ export default function Projects() {
                             </Badge>
                           ))}
                         </div>
-                        <div>
-                          <Link href={project.Link || "#"}
+                        <div className="flex justify-between items-center mt-2 px-2">
+                          <Link href={project.view_link || "#"}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="mt-4 inline-block text-violet-600 dark:text-violet-400 hover:underline"
                           >
-                            View Project
+                            View Project 
                           </Link>
+                          {/* GIT */}
+                          <Link href={project.repo_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="ml-4 inline-block text-violet-600 dark:text-violet-400 hover:underline"
+                          >
+                            <FaGithub className="inline mr-1" /> Code
+                          </Link> 
                         </div>
                       </CardContent>
                     </Card>
