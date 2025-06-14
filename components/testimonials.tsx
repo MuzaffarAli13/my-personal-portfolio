@@ -10,7 +10,7 @@ import { Quote } from "lucide-react"
 const testimonials = [
   {
     name: "Asad Ali",
-    avatar: "AR",
+    avatar: "AA",
     role: "Restaurant Owner",
     content: "Muzaffar delivered my website exactly as I imagined. Fast, reliable, and creative!",
   },
@@ -21,8 +21,8 @@ const testimonials = [
     content: "Excellent work on our e-commerce store. Highly recommended for future projects.",
   },
   {
-    name: "Ahmed Hassan",
-    avatar: "AH",
+    name: "Saddam Hussain",
+    avatar: "saddam.jpg",
     role: "Tech Startup Founder",
     content:
       "The chatbot Muzaffar built for us has significantly improved our customer engagement and support efficiency.",
@@ -63,7 +63,7 @@ export default function Testimonials() {
                 <p className="text-lg italic">{testimonial.content}</p>
                 <div className="flex items-center space-x-4 pt-4">
                   <Avatar>
-                    <AvatarImage src={`/placeholder.svg?height=40&width=40&text=${testimonial.avatar}`} />
+                    <AvatarImage src={testimonial.avatar} />
                     <AvatarFallback className="bg-violet-200 dark:bg-violet-800 text-violet-800 dark:text-violet-200">
                       {testimonial.avatar}
                     </AvatarFallback>

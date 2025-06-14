@@ -5,6 +5,7 @@ import { Download, Send } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
@@ -19,8 +20,18 @@ export default function Hero() {
           >
             <div className="space-y-2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">Muzaffar Ali</h1>
-              <h2 className="text-xl md:text-2xl font-medium text-violet-600 dark:text-violet-400">
-                Full-Stack Developer | Next.js & React Specialist
+              <h2 className="text-lg md:text-3xl font-medium text-violet-600 dark:text-violet-400">
+                {/* Full-Stack Developer | Next.js & React Specialist */}
+                <Typewriter
+                 options={{
+                 strings: [
+                  "Full-Stack Developer | Next.js & React Specialist",
+                  "Agentic AI Developer",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
               </h2>
             </div>
             <p className="text-lg text-muted-foreground max-w-[600px]">
@@ -33,11 +44,11 @@ export default function Hero() {
               }} className="bg-violet-600 hover:bg-violet-700 text-white">
                 <Send className="mr-2 h-4 w-4" /> Hire Me
               </Button>
-              <Link href="/Muzaffar_Ali_Resume.pdf" target="_blank">
+              <a href="/Muzaffar_Ali_Resume.pdf" download="Muzaffar_Ali_Resume">
                  <Button variant="outline" className="border-violet-200 w-full dark:border-violet-800">
                 <Download className=" mr-2 h-4 w-4" /> Download Resume
               </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
           <motion.div

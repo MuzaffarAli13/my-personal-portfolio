@@ -8,6 +8,8 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { Menu } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
+import { IoMenu } from "react-icons/io5";
+
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -66,8 +68,9 @@ export default function Navbar() {
           <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-5 w-5" />
+              <Button variant="outline" size="icon" >
+                {/* <Menu className="w-20 h-10 bg-black" /> */}
+                <IoMenu className="w-full"/>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">

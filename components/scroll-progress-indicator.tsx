@@ -39,8 +39,9 @@ export default function ScrollProgressIndicator() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
-          className="fixed bottom-5 lg:bottom-8 left-5 lg:left-8 z-50"
+          className="fixed bottom-5 lg:bottom-5 left-5 lg:left-8 z-50"
         >
+          
           <Button
             onClick={scrollToTop}
             size="icon"

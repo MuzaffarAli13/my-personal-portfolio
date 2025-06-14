@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { toast } from "@/components/ui/use-toast"
-import { Loader2 } from "lucide-react"
+import { Loader } from "lucide-react"
+
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -166,7 +166,7 @@ export default function Contact() {
               >
                 {isSubmitting ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader className="mr-2 h-4 w-4 animate-spin" />
                     Sending...
                   </>
                 ) : (
