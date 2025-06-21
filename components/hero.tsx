@@ -44,7 +44,7 @@ export default function Hero() {
               }} className="bg-violet-600 hover:bg-violet-700 text-white">
                 <Send className="mr-2 h-4 w-4" /> Hire Me
               </Button>
-              <a href="/Muzaffar_Ali_Resume.pdf" download="Muzaffar_Ali_Resume">
+              <a href="/MuzaffarAliResume.pdf" download="Muzaffar_Ali_Resume">
                  <Button variant="outline" className="border-violet-200 w-full dark:border-violet-800">
                 <Download className=" mr-2 h-4 w-4" /> Download Resume
               </Button>
