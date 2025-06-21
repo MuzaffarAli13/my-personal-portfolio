@@ -12,6 +12,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Muzaffar Ali - Portfolio",
   description: "Portfolio website of Muzaffar Ali, Full-Stack Developer specializing in Next.js & React",
+   icons: {
+    icon: '/favicon.ico',
+  },
+  
 }
 
 export default function RootLayout({
