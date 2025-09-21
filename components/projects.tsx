@@ -33,6 +33,7 @@ const projects = [
     description: "Custom chatbot using AI SDKs and agentic workflows for intelligent customer support.",
     image: "/Frame.svg",
     techStack: ["Python", "AI Agent SDK", "OpenAI", "Gemini"],
+    view_link:"https://multi-agents-openai.vercel.app/",
     repo_link: "https://github.com/MuzaffarAli13/Multi-Agent-"
   },
   {
