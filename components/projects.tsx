@@ -12,6 +12,14 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+  title: "Furniture Ecommerce Website",
+  description: "A modern, responsive furniture ecommerce store built with Next.js, Tailwind CSS, and Sanity CMS.",
+  image: "/furniture.png",
+  techStack: ["React", "Next.js", "Tailwind CSS", "Sanity"],
+  view_link: "https://jannat-traders.vercel.app/",
+  repo_link: "https://github.com/MuzaffarAli13/jannat-traders.git"
+ },
+  {
     title: "Restaurant Website",
     description: "A modern, responsive website for a high-end restaurant with online reservation system.",
     image: "/resto.jpg",
